@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tituloTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Temperatura"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/inputValorTemperatura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese temperatura"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloTemperatura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerEntradaTemperatura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/inputValorTemperatura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerSalidaTemperatura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerEntradaTemperatura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnConvertirTemperatura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerSalidaTemperatura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <TextView
+        android:id="@+id/resultadoTemperatura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnConvertirTemperatura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_gradiente"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/inputValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde_redondeado"
+        android:backgroundTint="@color/black"
+        android:hint="Ingrese valor"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:id="@+id/spinnerEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde_redondeado"
+        android:padding="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerSalida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde_redondeado"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:background="@drawable/boton_redondeado"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btnBorrarChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrar Chat"
+        android:background="@drawable/boton_redondeado"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/> <!-- Espaciado agregado -->
+
+    <Button
+        android:id="@+id/btnsalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:background="@drawable/boton_redondeado"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:padding="10dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+</LinearLayout>

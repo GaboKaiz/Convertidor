@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_gradiente">
+
+    <TextView
+        android:id="@+id/tituloMoneda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Monedas"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/inputValorMoneda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese monto"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:padding="12dp"
+        android:background="@drawable/borde_redondeado"
+        app:layout_constraintTop_toBottomOf="@id/tituloMoneda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerEntradaMoneda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde_redondeado"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/inputValorMoneda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerSalidaMoneda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde_redondeado"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerEntradaMoneda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnConvertirMoneda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:background="@drawable/boton_redondeado"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerSalidaMoneda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnBorrarMoneda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Borrar"
+        android:background="@drawable/boton_redondeado"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnConvertirMoneda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnSalirMoneda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:background="@drawable/boton_redondeado"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnBorrarMoneda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:id="@+id/resultadoMoneda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textSize="20sp"
+
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSalirMoneda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
