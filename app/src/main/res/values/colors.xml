@@ -4,4 +4,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="celeste">#0091EA</color> <!-- Azul celeste intenso -->
     <color name="purple_500">#6200EE</color>
+    <color name="blue">#2196F3</color>
+    <color name="red">#D32F2F</color>
+    <color name="yellow">#FFD700</color>
+    <color name="light_blue">#87CEFA</color>
+    <color name="bright_white">#FFFFFF</color>
+
+
 </resources>

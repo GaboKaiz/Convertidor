@@ -16,10 +16,11 @@ class Temperatura : AppCompatActivity() {
         val spinnerSalida = findViewById<Spinner>(R.id.spinnerSalidaTemperatura)
         val btnConvertir = findViewById<Button>(R.id.btnConvertirTemperatura)
         val resultado = findViewById<TextView>(R.id.resultadoTemperatura)
+        val btnBorrar = findViewById<Button>(R.id.btnBorrar)
+        val btnVolver = findViewById<Button>(R.id.btnVolver)
 
         val unidades = arrayOf("Celsius", "Fahrenheit", "Kelvin", "Rankine")
 
-        // Configurar los spinners con las unidades
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, unidades)
         spinnerEntrada.adapter = adapter
         spinnerSalida.adapter = adapter
@@ -38,6 +39,15 @@ class Temperatura : AppCompatActivity() {
 
             val resultadoConversion = convertirTemperatura(valor, unidadEntrada, unidadSalida)
             resultado.text = "Resultado: $resultadoConversion $unidadSalida"
+        }
+
+        btnBorrar.setOnClickListener {
+            inputValor.text.clear()
+            resultado.text = "Resultado:"
+        }
+
+        btnVolver.setOnClickListener {
+            finish()
         }
     }
 
